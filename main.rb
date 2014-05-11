@@ -1,0 +1,90 @@
+require 'sinatra'
+require './money_calculator.rb'
+require './boot.rb'
+
+# ROUTES FOR ADMIN SECTION
+get '/admin' do
+  @products = Item.all
+  erb :admin_index
+end
+
+get '/new_product' do
+  @product = Item.new
+  erb :product_form
+end
+
+post '/create_product' do
+  Item.create!(
+    name: params[:name],
+    price: params[:price],
+    quantity: params[:quantity],
+    sold: 0
+  )
+  redirect to '/admin'
+end
+
+get '/edit_product/:id' do
+  @product = Item.find(params[:id])
+  erb :product_form
+end
+
+post '/update_product/:id' do
+  @product = Item.find(params[:id])
+  @product.update_attributes!(
+    name: params[:name],
+    price: params[:price],
+    quantity: params[:quantity],
+  )
+  redirect to '/admin'
+end
+
+get '/delete_product/:id' do
+  @product = Item.find(params[:id])
+  @product.destroy!
+  redirect to '/admin'
+end
+# ROUTES FOR ADMIN SECTION
+
+get '/' do
+	@all = Item.all
+	@a = @all.sample(10)
+	erb :index
+end
+
+get '/about' do
+	erb :about
+end
+
+get '/products' do
+	@all = Item.all
+	erb :products
+end
+
+get '/buy/:id' do
+	@product = Item.find(params[:id])
+	erb :buy
+end
+
+post '/sold/:id' do
+	@product = Item.find(params[:id])
+	total_cost = @product.price.to_f * params[:items].to_i
+	@m = MoneyCalculator.new(params[:one], params[:five], params[:ten], params[:twenty], params[:fifty], params[:hundred], params[:fivehundred], params[:thousand])
+	if @product.quantity < params[:items].to_i
+		erb :fail
+	elsif total_cost > @m.total.to_i
+		erb :fail
+	else
+		@m.change(total_cost)
+		@nq = @product.quantity - params[:items].to_f
+		@product.update_attributes!(quantity: @nq)
+		if @product.quantity == 0
+			@product.destroy!
+		end
+		erb :sold
+	end
+end
+
+get '/easter_egg' do
+	erb :easter_egg
+end
+	

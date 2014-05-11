@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Day Roman';
+  font-style:  normal;
+  font-weight: 600;
+  src: url('DAYROM__.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style:  normal;
+  font-weight: 300;
+  src: url('Roboto-Light.ttf') format('truetype');
+}
+

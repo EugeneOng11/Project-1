@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Thank you : Aling Nena </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/additonal.css" rel="stylesheet">
+    <style>
+      body {padding-left: 15%; padding-right: 15%; padding-top: 8%;}
+    </style>
+  </head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Aling Nena's</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li> <a href="/">The Philippines' Finest</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">The Aling Nena Story</a></li>
+        <li><a href="/products">All Products</a></li>
+      </ul>
+    </div><!-- /.container-fluid -->
+  </nav>
+<h1> Thank you. </h1> 
+<p>You tendered <%=@m.total%> pesos for <%=@m.bill%> pesos worth of the Philippines' best. Your change is <%=@m.barya[:amount]%> (<%=@m.barya[:thousands]%> thousand(s), <%=@m.barya[:five_hundreds]%> five hundred(s), <%=@m.barya[:hundreds]%> hundred(s), <%=@m.barya[:fifties]%> fifty/ies, <%=@m.barya[:twenties]%> twenty/ies, <%=@m.barya[:tens]%> ten(s), <%=@m.barya[:fives]%> five(s) and <%=@m.barya[:ones]%> ones). </p>
+</body>
+</html>

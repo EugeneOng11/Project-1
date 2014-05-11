@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/additonal.css" rel="stylesheet">
+    <style>
+      body {padding-left: 15%; padding-right: 15%; padding-top: 8%;}
+    </style>
+  </head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Aling Nena's</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li> <a href="/">The Philippines' Finest</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">The Aling Nena Story</a></li>
+        <li><a href="/products">All Products</a></li>
+      </ul>
+    </div><!-- /.container-fluid -->
+  </nav>
+<h1> Hello There.</h1>
+<p>If you are reading this, then congratulations! You have successfully discovered this not-very-secret page.</p>
+<p>Shoutout to the wonderful Sentient Solutions/Potato folks! I'm sorry if you guys have to put with my grouchiness so often. I promise I'll try to be a more pleasant friend! Thank you guys for sticking with me throughout these years. I'm really proud of where we're all going. Here's to more happy times and beautiful memories. And potatoes.</p>
+<p> Hi, Inquiry homies! I'm really sorry I can't go out with you guys 99% of the time, but I'll make up for it, promise. I'm really excited for us this year; the campus needs our sassiness all the more now. I look forward to writing with the rest of you guys once you've joined in July (and you should, because Nadine will be very cross if you don't). To the rest of my GUIDON friends, thanks for being great, great company. You guys are the reason (apart from the aircon) why I love the Pub Room so much. </p>
+<p>To A: I'm sorry if I'm making things more awkward than they should be. You'll understand once I admit how I really feel about you.</p>
+<p><strong>Don't just snob A-FARM, Ateneans! Listen to what they've to say. Save agrarian reform in the Philippines.</strong></p>
+</body>
+</html>
+

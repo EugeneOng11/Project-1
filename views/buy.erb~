@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About : Aling Nena </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/additonal.css" rel="stylesheet">
+    <style>
+      body {padding-left: 15%; padding-right: 15%; padding-top: 8%;}
+    </style>
+  </head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Aling Nena's</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li> <a href="/">The Philippines' Finest</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">The Aling Nena Story</a></li>
+        <li><a href="/products">All Products</a></li>
+      </ul>
+    </div><!-- /.container-fluid -->
+  </nav>
+
+	<h1> Purchase <%=@product.name%> </h1>
+	<form name ="input" action ="/sold/<%=@product.id%>" method ="post">
+	<p> Number of items: <input type="number" value="0" name="items"> </p>
+	<p> Number of ones: <input type="number" value="0" name="one"> </p>
+	<p> Number of fives: <input type="number" value="0" name="five"> </p>
+	<p> Number of tens: <input type="number" value="0" name="ten"> </p>
+	<p> Number of twenties: <input type="number" value="0" name="twenty"> </p>
+	<p> Number of fifties: <input type="number" value="0" name="fifty"> </p>
+	<p> Number of hundreds: <input type="number" value="0" name="hundred"> </p>
+	<p> Number of five hundreds: <input type="number" value="0" name="fivehundred"> </p>
+	<p> Number of thousands: <input type="number" value="0" name="thousand"> </p>
+	<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
+

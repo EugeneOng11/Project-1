@@ -1,0 +1,49 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Home : Aling Nena </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/additonal.css" rel="stylesheet">
+    <style>
+      body {padding-left: 15%; padding-right: 15%; padding-top: 8%;}
+    </style>
+  </head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">Aling Nena's</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li> <a href="/easter_egg">The Philippines' Finest</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/about">The Aling Nena Story</a></li>
+        <li><a href="/products">All Products</a></li>
+      </ul>
+    </div><!-- /.container-fluid -->
+  </nav>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <td><h1>Products of the day</h1></td>
+            </tr>
+          </thead>
+          <tbody>  
+          <%@a.each do |product|%>
+            <tr>                
+              <td><a href="/buy/<%=product.id%>"> <%=product.name %></td>
+            </tr>
+          </tbody>
+          <% end %>
+        </table>
+</body>
+</html>

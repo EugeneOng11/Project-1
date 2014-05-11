@@ -1,0 +1,10 @@
+body {
+  padding-top: 25%;
+  padding-bottom: 25%;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+.admin {
+  padding: 40px 15px;
+  text-align: center;
+}
